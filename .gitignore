@@ -1,24 +1,142 @@
-# Compiled class file
-*.class
+# Archivos de compilación de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
-# Log file
+# Archivos de compilación de Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Archivos de IDE
+## Eclipse
+.classpath
+.project
+.settings/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+## IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## VS Code
+.vscode/
+
+# Archivos del sistema operativo
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Linux
+*~
+
+# Archivos de aplicación
+## Logs
 *.log
+logs/
+!**/src/main/**/logs/
+!**/src/test/**/logs/
 
-# BlueJ files
-*.ctxt
+## Archivos temporales
+*.tmp
+*.temp
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+## Archivos de configuración local
+#*.properties
+#!src/main/resources/application.properties
+#!src/test/resources/application.properties
 
-# Package Files #
-*.jar
+# Archivos de base de datos H2 (común en desarrollo Spring Boot)
+*.mv.db
+*.trace.db
+
+# Archivos de Docker
+#Dockerfile
+#.dockerignore
+
+# Archivos de despliegue
 *.war
-*.nar
 *.ear
 *.zip
+*.tar
 *.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Archivos de cobertura de código (JaCoCo, etc.)
+#*.exec
+#*.jacoco
+#jacoco.exec
+#jacoco-it.exec
+
+# Archivos de SonarQube
+.sonar/
+
+# Archivos de Checkstyle
+checkstyle-result.xml
+
+# Archivos de aplicación Spring Boot específicos
+## Configuración específica de perfil
+application-*.properties
+!src/main/resources/application-*.properties
+!src/test/resources/application-*.properties
+
+#application-*.yml
+#!src/main/resources/application-*.yml
+#!src/test/resources/application-*.yml
+
+## Archivos de sesión HTTP si se usan
+*.ser
+
+# Archivos de licencias y documentación generada
+LICENSE*.txt
+NOTICE*.txt
+DEPENDENCIES
+
+# Archivos de dependencias descargadas manualmente
+/lib/
+/ext/
+
+# Archivos de certificados SSL/keystores (no subir a repositorio)
+*.jks
+*.p12
+*.pfx
+*.cer
+*.crt
+*.key
+
+# Archivos de configuración específicos del entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de cache
+.cache/
